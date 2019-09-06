@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{11D57B3F-0515-46FD-8D3B-BC1A891975EF}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Face</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>facelib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="SeetaFace2\FaceDetector\include\seeta\CFaceInfo.h" />
+    <ClInclude Include="SeetaFace2\FaceDetector\include\seeta\CStruct.h" />
+    <ClInclude Include="SeetaFace2\FaceDetector\include\seeta\FaceDetector.h" />
+    <ClInclude Include="SeetaFace2\FaceDetector\include\seeta\Struct.h" />
+    <ClInclude Include="SeetaFace2\FaceDetector\seeta\CommonStruct.h" />
+    <ClInclude Include="SeetaFace2\FaceDetector\seeta\common_alignment.h" />
+    <ClInclude Include="SeetaFace2\FaceDetector\seeta\DataHelper.h" />
+    <ClInclude Include="SeetaFace2\FaceDetector\seeta\FaceDetectorPrivate.h" />
+    <ClInclude Include="SeetaFace2\FaceDetector\seeta\graphics2d.h" />
+    <ClInclude Include="SeetaFace2\FaceDetector\seeta\ImageProcess.h" />
+    <ClInclude Include="SeetaFace2\FaceDetector\seeta\SeetaFaceDetectorConfig.h" />
+    <ClInclude Include="SeetaFace2\FaceLandmarker\include\seeta\CStruct.h" />
+    <ClInclude Include="SeetaFace2\FaceLandmarker\include\seeta\FaceLandmarker.h" />
+    <ClInclude Include="SeetaFace2\FaceLandmarker\include\seeta\Struct.h" />
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\CFaceInfo.h" />
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\CommonStruct.h" />
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\common_alignment.h" />
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\DataHelper.h" />
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\FaceLandmarkerPrivate.h" />
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\graphics2d.h" />
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\ImageProcess.h" />
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\SeetaFaceLandmarkerConfig.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\include\seeta\CStream.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\include\seeta\CStruct.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\include\seeta\FaceDatabase.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\include\seeta\FaceRecognizer.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\include\seeta\Stream.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\include\seeta\Struct.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\CFaceInfo.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\CommonStruct.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\common_alignment.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\DataHelper.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\FaceRecognizerPrivate.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\graphics2d.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\ImageProcess.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\Mutex.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\SeetaFaceRecognizerConfig.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\SeetaModelHeader.h" />
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\SeetaNetParseProto.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\include\SeetaNetForward.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\include\SeetaNetStruct.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetBaseLayer.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetBatchNormalizeCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetBatchToSpaceNDCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetConcatCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetConvolutionCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetCropCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetDeconvolutionCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetEltwiseCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetExpCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetInnerproductCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetMemoryDataLayerCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetPoolingCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetPowerCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetPreReluCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetRealMulCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetReluCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetReshapeCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetScaleCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetShapeIndexPatchCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetSigmoidCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetSoftmaxCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetSpaceToBatchNDCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetSplitCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\ReadFromSeetaNetLayer.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNet.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetBlobCpu.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetCommon.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetCommonfuction.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetCreateLayerDetailCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetCreateLayerMapCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetFeatureMap.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetHypeShape.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetIm2Col.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetLayerType.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetMacro.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetMathCPU.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetMemoryModel.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetParseProto.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetProto.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetResource.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetSimd.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\mem\pot.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\mem\vat.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\sync\canyon.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\sync\cartridge.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\sync\shotgun.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\tools\box.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\tools\ctxmgr_lite.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\tools\ctxmgr_lite_support.h" />
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\tools\void_bind.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SeetaFace2\FaceDetector\seeta\common_alignment.cpp" />
+    <ClCompile Include="SeetaFace2\FaceDetector\seeta\FaceDetectorPrivate.cpp" />
+    <ClCompile Include="SeetaFace2\FaceDetector\seeta\graphics2d.cpp" />
+    <ClCompile Include="SeetaFace2\FaceDetector\seeta\ImageProcess.cpp" />
+    <ClCompile Include="SeetaFace2\FaceDetector\src\seeta\FaceDetector.cpp" />
+    <ClCompile Include="SeetaFace2\FaceLandmarker\seeta\common_alignment.cpp" />
+    <ClCompile Include="SeetaFace2\FaceLandmarker\seeta\FaceLandmarkerPrivate.cpp" />
+    <ClCompile Include="SeetaFace2\FaceLandmarker\seeta\graphics2d.cpp" />
+    <ClCompile Include="SeetaFace2\FaceLandmarker\seeta\ImageProcess.cpp" />
+    <ClCompile Include="SeetaFace2\FaceLandmarker\src\seeta\FaceLandmarker.cpp" />
+    <ClCompile Include="SeetaFace2\FaceRecognizer\seeta\common_alignment.cpp" />
+    <ClCompile Include="SeetaFace2\FaceRecognizer\seeta\FaceRecognizerPrivate.cpp" />
+    <ClCompile Include="SeetaFace2\FaceRecognizer\seeta\graphics2d.cpp" />
+    <ClCompile Include="SeetaFace2\FaceRecognizer\seeta\ImageProcess.cpp" />
+    <ClCompile Include="SeetaFace2\FaceRecognizer\seeta\SeetaNetParseProto.cpp" />
+    <ClCompile Include="SeetaFace2\FaceRecognizer\src\seeta\FaceDatabase.cpp" />
+    <ClCompile Include="SeetaFace2\FaceRecognizer\src\seeta\FaceRecognizer.cpp" />
+    <ClCompile Include="SeetaFace2\SeetaNet\src\orz\mem\pot.cpp" />
+    <ClCompile Include="SeetaFace2\SeetaNet\src\orz\mem\vat.cpp" />
+    <ClCompile Include="SeetaFace2\SeetaNet\src\orz\sync\canyon.cpp" />
+    <ClCompile Include="SeetaFace2\SeetaNet\src\orz\sync\cartridge.cpp" />
+    <ClCompile Include="SeetaFace2\SeetaNet\src\orz\sync\shotgun.cpp" />
+    <ClCompile Include="SeetaFace2\SeetaNet\src\orz\tools\box.cpp" />
+    <ClCompile Include="SeetaFace2\SeetaNet\src\ReadFromSeetaNetLayer.cpp" />
+    <ClCompile Include="SeetaFace2\SeetaNet\src\SeetaNet.cpp" />
+    <ClCompile Include="SeetaFace2\SeetaNet\src\SeetaNetForward.cpp" />
+    <ClCompile Include="SeetaFace2\SeetaNet\src\SeetaNetIm2Col.cpp" />
+    <ClCompile Include="SeetaFace2\SeetaNet\src\SeetaNetMathCPU.cpp" />
+    <ClCompile Include="SeetaFace2\SeetaNet\src\SeetaNetParseProto.cpp" />
+    <ClCompile Include="SeetaFace2\SeetaNet\src\SeetaNetProto.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SeetaFace2\FaceLandmarker\seeta\SeetaFaceLandmarkerConfig.h.in" />
+    <None Include="SeetaFace2\FaceRecognizer\seeta\SeetaFaceRecognizerConfig.h.in" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

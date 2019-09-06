@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SeetaFace2">
+      <UniqueIdentifier>{8052a982-510d-4158-b346-db23253e48af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceDetector">
+      <UniqueIdentifier>{8042fcad-399c-4076-88c5-c27781159b91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceDetector\include">
+      <UniqueIdentifier>{c22bf4f6-196a-41e7-8154-d5f6b209e3e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceLandmarker">
+      <UniqueIdentifier>{456b711e-f332-47ec-91da-22fda2d09f6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceRecognizer">
+      <UniqueIdentifier>{ed951e8d-1a75-4406-994e-0b1a20dfed5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\SeetaNet">
+      <UniqueIdentifier>{2cc0554f-d856-42c5-ba94-d55e431de7d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceDetector\include\seeta">
+      <UniqueIdentifier>{d2ac3ce1-288a-4b34-8497-24ef68bcb7f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceDetector\seeta">
+      <UniqueIdentifier>{2b48c0a3-4b11-47a0-a76c-2db2f0f179da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceDetector\src">
+      <UniqueIdentifier>{c5bfdb56-d0f7-4d08-af48-800304783dc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceDetector\src\seeta">
+      <UniqueIdentifier>{500b5458-cbf2-4d1f-b2b2-b31c961d84c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceLandmarker\include">
+      <UniqueIdentifier>{6a5916ed-157b-460a-81bd-ca300ed09de1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceLandmarker\include\seeta">
+      <UniqueIdentifier>{a7e664d1-66a8-47d8-b6e6-9eb0e96cc64c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceLandmarker\seeta">
+      <UniqueIdentifier>{3e1eb344-1afe-4de2-92d5-102f07a63f72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceLandmarker\src">
+      <UniqueIdentifier>{16283821-4acb-4a01-a6d5-92c7775bd6d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceLandmarker\src\seeta">
+      <UniqueIdentifier>{62f44c9d-86c3-44ee-9f5c-7b793fa06564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceRecognizer\include">
+      <UniqueIdentifier>{5797e9c6-d2aa-4c86-9ee4-e831ca30eb6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceRecognizer\include\seeta">
+      <UniqueIdentifier>{176e827f-24fa-43df-879d-14c593498861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceRecognizer\seeta">
+      <UniqueIdentifier>{ffb521e1-3932-40b2-b286-4d5b7ebdc27f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceRecognizer\src">
+      <UniqueIdentifier>{260ec88b-a564-4033-a2e3-2528b9ccbb20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\FaceRecognizer\src\seeta">
+      <UniqueIdentifier>{c327f7b1-34da-4b95-b88c-095474fac0e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\SeetaNet\include">
+      <UniqueIdentifier>{e7f53f2b-db97-4462-85ff-d338b3fa420c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\SeetaNet\src">
+      <UniqueIdentifier>{a9602091-ad0b-40c2-8d03-12386282fd0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\SeetaNet\src\include_inner">
+      <UniqueIdentifier>{ce3ada12-4d27-4976-b2c9-6b6b91f5a0ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\SeetaNet\src\include_inner\layers">
+      <UniqueIdentifier>{10fa39d4-1c61-4aba-8dad-2e8c7b49ebad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\SeetaNet\src\orz">
+      <UniqueIdentifier>{8ca70c41-5aef-4418-9f88-9e4f0c2bd12f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\SeetaNet\src\orz\mem">
+      <UniqueIdentifier>{f02d878c-2115-49ee-ab4d-bd46b4a861e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\SeetaNet\src\orz\sync">
+      <UniqueIdentifier>{3991d047-41d3-4c6e-b8ef-843592b4d6e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeetaFace2\SeetaNet\src\orz\tools">
+      <UniqueIdentifier>{abd2268c-f10a-4673-ba54-30a9207e0f32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SeetaFace2\FaceDetector\include\seeta\CFaceInfo.h">
+      <Filter>SeetaFace2\FaceDetector\include\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceDetector\include\seeta\CStruct.h">
+      <Filter>SeetaFace2\FaceDetector\include\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceDetector\include\seeta\FaceDetector.h">
+      <Filter>SeetaFace2\FaceDetector\include\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceDetector\include\seeta\Struct.h">
+      <Filter>SeetaFace2\FaceDetector\include\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceDetector\seeta\common_alignment.h">
+      <Filter>SeetaFace2\FaceDetector\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceDetector\seeta\CommonStruct.h">
+      <Filter>SeetaFace2\FaceDetector\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceDetector\seeta\DataHelper.h">
+      <Filter>SeetaFace2\FaceDetector\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceDetector\seeta\FaceDetectorPrivate.h">
+      <Filter>SeetaFace2\FaceDetector\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceDetector\seeta\graphics2d.h">
+      <Filter>SeetaFace2\FaceDetector\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceDetector\seeta\ImageProcess.h">
+      <Filter>SeetaFace2\FaceDetector\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceDetector\seeta\SeetaFaceDetectorConfig.h">
+      <Filter>SeetaFace2\FaceDetector\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceLandmarker\include\seeta\CStruct.h">
+      <Filter>SeetaFace2\FaceLandmarker\include\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceLandmarker\include\seeta\FaceLandmarker.h">
+      <Filter>SeetaFace2\FaceLandmarker\include\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceLandmarker\include\seeta\Struct.h">
+      <Filter>SeetaFace2\FaceLandmarker\include\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\CFaceInfo.h">
+      <Filter>SeetaFace2\FaceLandmarker\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\common_alignment.h">
+      <Filter>SeetaFace2\FaceLandmarker\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\CommonStruct.h">
+      <Filter>SeetaFace2\FaceLandmarker\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\DataHelper.h">
+      <Filter>SeetaFace2\FaceLandmarker\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\FaceLandmarkerPrivate.h">
+      <Filter>SeetaFace2\FaceLandmarker\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\graphics2d.h">
+      <Filter>SeetaFace2\FaceLandmarker\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\ImageProcess.h">
+      <Filter>SeetaFace2\FaceLandmarker\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceLandmarker\seeta\SeetaFaceLandmarkerConfig.h">
+      <Filter>SeetaFace2\FaceLandmarker\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\include\seeta\CStream.h">
+      <Filter>SeetaFace2\FaceRecognizer\include\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\include\seeta\CStruct.h">
+      <Filter>SeetaFace2\FaceRecognizer\include\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\include\seeta\FaceDatabase.h">
+      <Filter>SeetaFace2\FaceRecognizer\include\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\include\seeta\FaceRecognizer.h">
+      <Filter>SeetaFace2\FaceRecognizer\include\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\include\seeta\Stream.h">
+      <Filter>SeetaFace2\FaceRecognizer\include\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\include\seeta\Struct.h">
+      <Filter>SeetaFace2\FaceRecognizer\include\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\CFaceInfo.h">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\common_alignment.h">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\CommonStruct.h">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\DataHelper.h">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\FaceRecognizerPrivate.h">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\graphics2d.h">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\ImageProcess.h">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\Mutex.h">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\SeetaFaceRecognizerConfig.h">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\SeetaModelHeader.h">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\FaceRecognizer\seeta\SeetaNetParseProto.h">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\include\SeetaNetForward.h">
+      <Filter>SeetaFace2\SeetaNet\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\include\SeetaNetStruct.h">
+      <Filter>SeetaFace2\SeetaNet\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\ReadFromSeetaNetLayer.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNet.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetBlobCpu.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetCommon.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetCommonfuction.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetCreateLayerDetailCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetCreateLayerMapCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetFeatureMap.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetHypeShape.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetIm2Col.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetLayerType.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetMacro.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetMathCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetMemoryModel.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetParseProto.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetProto.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetResource.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\SeetaNetSimd.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetBaseLayer.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetBatchNormalizeCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetBatchToSpaceNDCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetConcatCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetConvolutionCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetCropCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetDeconvolutionCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetEltwiseCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetExpCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetInnerproductCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetMemoryDataLayerCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetPoolingCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetPowerCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetPreReluCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetRealMulCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetReluCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetReshapeCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetScaleCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetShapeIndexPatchCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetSigmoidCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetSoftmaxCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetSpaceToBatchNDCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\include_inner\layers\SeetaNetSplitCPU.h">
+      <Filter>SeetaFace2\SeetaNet\src\include_inner\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\mem\pot.h">
+      <Filter>SeetaFace2\SeetaNet\src\orz\mem</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\mem\vat.h">
+      <Filter>SeetaFace2\SeetaNet\src\orz\mem</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\sync\canyon.h">
+      <Filter>SeetaFace2\SeetaNet\src\orz\sync</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\sync\cartridge.h">
+      <Filter>SeetaFace2\SeetaNet\src\orz\sync</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\sync\shotgun.h">
+      <Filter>SeetaFace2\SeetaNet\src\orz\sync</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\tools\box.h">
+      <Filter>SeetaFace2\SeetaNet\src\orz\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\tools\ctxmgr_lite.h">
+      <Filter>SeetaFace2\SeetaNet\src\orz\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\tools\ctxmgr_lite_support.h">
+      <Filter>SeetaFace2\SeetaNet\src\orz\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace2\SeetaNet\src\orz\tools\void_bind.h">
+      <Filter>SeetaFace2\SeetaNet\src\orz\tools</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SeetaFace2\FaceDetector\seeta\common_alignment.cpp">
+      <Filter>SeetaFace2\FaceDetector\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceDetector\seeta\FaceDetectorPrivate.cpp">
+      <Filter>SeetaFace2\FaceDetector\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceDetector\seeta\graphics2d.cpp">
+      <Filter>SeetaFace2\FaceDetector\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceDetector\seeta\ImageProcess.cpp">
+      <Filter>SeetaFace2\FaceDetector\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceDetector\src\seeta\FaceDetector.cpp">
+      <Filter>SeetaFace2\FaceDetector\src\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceLandmarker\seeta\common_alignment.cpp">
+      <Filter>SeetaFace2\FaceLandmarker\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceLandmarker\seeta\FaceLandmarkerPrivate.cpp">
+      <Filter>SeetaFace2\FaceLandmarker\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceLandmarker\seeta\graphics2d.cpp">
+      <Filter>SeetaFace2\FaceLandmarker\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceLandmarker\seeta\ImageProcess.cpp">
+      <Filter>SeetaFace2\FaceLandmarker\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceLandmarker\src\seeta\FaceLandmarker.cpp">
+      <Filter>SeetaFace2\FaceLandmarker\src\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceRecognizer\seeta\common_alignment.cpp">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceRecognizer\seeta\FaceRecognizerPrivate.cpp">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceRecognizer\seeta\graphics2d.cpp">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceRecognizer\seeta\ImageProcess.cpp">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceRecognizer\seeta\SeetaNetParseProto.cpp">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceRecognizer\src\seeta\FaceDatabase.cpp">
+      <Filter>SeetaFace2\FaceRecognizer\src\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\FaceRecognizer\src\seeta\FaceRecognizer.cpp">
+      <Filter>SeetaFace2\FaceRecognizer\src\seeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\SeetaNet\src\ReadFromSeetaNetLayer.cpp">
+      <Filter>SeetaFace2\SeetaNet\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\SeetaNet\src\SeetaNet.cpp">
+      <Filter>SeetaFace2\SeetaNet\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\SeetaNet\src\SeetaNetForward.cpp">
+      <Filter>SeetaFace2\SeetaNet\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\SeetaNet\src\SeetaNetIm2Col.cpp">
+      <Filter>SeetaFace2\SeetaNet\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\SeetaNet\src\SeetaNetMathCPU.cpp">
+      <Filter>SeetaFace2\SeetaNet\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\SeetaNet\src\SeetaNetParseProto.cpp">
+      <Filter>SeetaFace2\SeetaNet\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\SeetaNet\src\SeetaNetProto.cpp">
+      <Filter>SeetaFace2\SeetaNet\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\SeetaNet\src\orz\mem\pot.cpp">
+      <Filter>SeetaFace2\SeetaNet\src\orz\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\SeetaNet\src\orz\mem\vat.cpp">
+      <Filter>SeetaFace2\SeetaNet\src\orz\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\SeetaNet\src\orz\sync\canyon.cpp">
+      <Filter>SeetaFace2\SeetaNet\src\orz\sync</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\SeetaNet\src\orz\sync\cartridge.cpp">
+      <Filter>SeetaFace2\SeetaNet\src\orz\sync</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\SeetaNet\src\orz\sync\shotgun.cpp">
+      <Filter>SeetaFace2\SeetaNet\src\orz\sync</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace2\SeetaNet\src\orz\tools\box.cpp">
+      <Filter>SeetaFace2\SeetaNet\src\orz\tools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SeetaFace2\FaceLandmarker\seeta\SeetaFaceLandmarkerConfig.h.in">
+      <Filter>SeetaFace2\FaceLandmarker\seeta</Filter>
+    </None>
+    <None Include="SeetaFace2\FaceRecognizer\seeta\SeetaFaceRecognizerConfig.h.in">
+      <Filter>SeetaFace2\FaceRecognizer\seeta</Filter>
+    </None>
+  </ItemGroup>
+</Project>
