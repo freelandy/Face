@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Face;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Drawing;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
-using Face;
 
 namespace UnitTestProject1
 {
@@ -14,7 +14,8 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod1()
         {
-            Bitmap bmp1 = (Bitmap)Bitmap.FromFile("1.png");
+            Bitmap bmp1 = (Bitmap)Bitmap.FromFile("2.jpg");
+            Bitmap bmp2 = (Bitmap)Bitmap.FromFile("6.jpg");
             Face.Aligner aligner = new Aligner("models\\pd_2_00_pts5.dat");
             Face.Detector detector = new Detector("models\\fd_2_00.dat");
             Face.Recognizer recognizer = new Recognizer("models\\fr_2_10.dat");
@@ -24,20 +25,20 @@ namespace UnitTestProject1
             sw.Start();
 
             List<Rectangle> faces1 = detector.Detect(bmp1);
-            List<Rectangle> faces2 = detector.Detect(bmp1);
+            List<Rectangle> faces2 = detector.Detect(bmp2);
             sw.Stop();
 
             long detect = sw.ElapsedMilliseconds;
 
             sw.Restart();
             List<PointF> pt1 = aligner.Align(bmp1, faces1[0]);
-            List<PointF> pt2 = aligner.Align(bmp1, faces2[1]);
+            List<PointF> pt2 = aligner.Align(bmp2, faces2[0]);
             sw.Stop();
 
             long align = sw.ElapsedMilliseconds;
 
             sw.Restart();
-            double s = recognizer.Verify(bmp1, pt1, bmp1, pt2);
+            double s = recognizer.Verify(bmp1, pt1, bmp2, pt2);
             sw.Stop();
 
             long recognize = sw.ElapsedMilliseconds;
@@ -47,13 +48,18 @@ namespace UnitTestProject1
                 Console.WriteLine(faces1[i].X + "\t" + faces1[i].Y + "\t" + faces1[i].Width + "\t" + faces1[i].Height);
             }
 
-            double score = assessor.Evaluate(bmp1, faces1[0], pt1);
+            sw.Restart();
+            double score = assessor.Evaluate(bmp2, faces2[0], pt2);
+            sw.Stop();
+
+            long assert = sw.ElapsedMilliseconds;
 
             Console.WriteLine(s);
             Console.WriteLine(score);
             Console.WriteLine("detect:" + detect);
             Console.WriteLine("align:" + align);
             Console.WriteLine("recognize:" + recognize);
+            Console.WriteLine("assert:" + assert);
 
         }
 

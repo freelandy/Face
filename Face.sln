@@ -9,8 +9,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Face", "Face\Face.vcxproj",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{913058CB-388E-4B80-A95E-325D362501E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{8053114D-7752-4E2C-8D52-07FF83CFC411}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,8 +32,8 @@ Global
 		{7F95A818-E9E3-4F26-90AB-F272F46D75D3}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{7F95A818-E9E3-4F26-90AB-F272F46D75D3}.Debug|x64.ActiveCfg = Debug|x64
 		{7F95A818-E9E3-4F26-90AB-F272F46D75D3}.Debug|x64.Build.0 = Debug|x64
-		{7F95A818-E9E3-4F26-90AB-F272F46D75D3}.Debug|x86.ActiveCfg = Debug|Win32
-		{7F95A818-E9E3-4F26-90AB-F272F46D75D3}.Debug|x86.Build.0 = Debug|Win32
+		{7F95A818-E9E3-4F26-90AB-F272F46D75D3}.Debug|x86.ActiveCfg = Debug|x64
+		{7F95A818-E9E3-4F26-90AB-F272F46D75D3}.Debug|x86.Build.0 = Debug|x64
 		{7F95A818-E9E3-4F26-90AB-F272F46D75D3}.Release|Any CPU.ActiveCfg = Release|Win32
 		{7F95A818-E9E3-4F26-90AB-F272F46D75D3}.Release|x64.ActiveCfg = Release|x64
 		{7F95A818-E9E3-4F26-90AB-F272F46D75D3}.Release|x64.Build.0 = Release|x64
@@ -53,18 +51,6 @@ Global
 		{913058CB-388E-4B80-A95E-325D362501E6}.Release|x64.Build.0 = Release|Any CPU
 		{913058CB-388E-4B80-A95E-325D362501E6}.Release|x86.ActiveCfg = Release|Any CPU
 		{913058CB-388E-4B80-A95E-325D362501E6}.Release|x86.Build.0 = Release|Any CPU
-		{8053114D-7752-4E2C-8D52-07FF83CFC411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8053114D-7752-4E2C-8D52-07FF83CFC411}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8053114D-7752-4E2C-8D52-07FF83CFC411}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{8053114D-7752-4E2C-8D52-07FF83CFC411}.Debug|x64.Build.0 = Debug|Any CPU
-		{8053114D-7752-4E2C-8D52-07FF83CFC411}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8053114D-7752-4E2C-8D52-07FF83CFC411}.Debug|x86.Build.0 = Debug|Any CPU
-		{8053114D-7752-4E2C-8D52-07FF83CFC411}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8053114D-7752-4E2C-8D52-07FF83CFC411}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8053114D-7752-4E2C-8D52-07FF83CFC411}.Release|x64.ActiveCfg = Release|Any CPU
-		{8053114D-7752-4E2C-8D52-07FF83CFC411}.Release|x64.Build.0 = Release|Any CPU
-		{8053114D-7752-4E2C-8D52-07FF83CFC411}.Release|x86.ActiveCfg = Release|Any CPU
-		{8053114D-7752-4E2C-8D52-07FF83CFC411}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
