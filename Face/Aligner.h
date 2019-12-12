@@ -1,9 +1,9 @@
 #pragma once
-#include "include/FaceEngine.h"
+#include "include/FaceLandmarker.h"
 
 #include "Utils.h"
 
-#pragma comment (lib,"../Face/3rd_party/seetaface2/SeetaPointDetector200.lib")
+#pragma comment (lib,"lib/SeetaFaceLandmarker.lib")
 
 using namespace System;
 using namespace System::Collections::Generic;
@@ -23,7 +23,7 @@ namespace Face
 		List<PointF>^ Align(Bitmap^ bmp, Rectangle^ face);
 
 	private:
-		seeta::PointDetector2* aligner = nullptr;
+		seeta::FaceLandmarker* aligner = nullptr;
 	};
 }
 

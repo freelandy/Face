@@ -1,9 +1,9 @@
 #pragma once
-#include "../Face/3rd_party/seetaface2/FaceRecognizer.h"
+#include "include/FaceDatabase.h"
 
 #include "Utils.h"
 
-#pragma comment (lib,"../Face/3rd_party/seetaface2/SeetaFaceRecognizer200.lib")
+#pragma comment (lib,"lib/SeetaFaceRecognizer.lib")
 
 using namespace System;
 using namespace System::Collections::Generic;
@@ -21,14 +21,13 @@ namespace Face
 		~Recognizer();
 
 		float Verify(Bitmap^ face1, List<PointF>^ pts1, Bitmap^ face2, List<PointF>^ pts2);
-		int Identify(Bitmap^ face, List<PointF>^ pts, float% similarity);
-		array<float>^ Identify(Bitmap^ face, List<PointF>^ pts);
-		int Register(Bitmap^ face, List<PointF>^ pts);
+		long Identify(Bitmap^ face, List<PointF>^ pts, float% similarity);
+		long Register(Bitmap^ face, List<PointF>^ pts);
 		void Clear();
-		int GetMaxRegisterIndex();
+		long GetMaxRegisterIndex();
 
 
 	private:
-		seeta::FaceRecognizer2* recognizer = nullptr;
+		seeta::FaceDatabase* recognizer = nullptr;
 	};
 }

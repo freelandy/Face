@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "Recognizer.h"
 
 namespace Face
@@ -9,8 +9,12 @@ namespace Face
 
 	Recognizer::Recognizer(String^ model_file_name)
 	{
+		seeta::ModelSetting::Device device = seeta::ModelSetting::CPU;
+		int id = 0;
+
 		char* model = (char*)(void*)System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(model_file_name);
-		this->recognizer = new seeta::FaceRecognizer2(model);
+		seeta::ModelSetting model_setting(model, device, id);
+		this->recognizer = new seeta::FaceDatabase(model_setting);
 	}
 
 	Recognizer::~Recognizer()
@@ -42,7 +46,7 @@ namespace Face
 		return similarity;
 	}
 
-	int Recognizer::Identify(Bitmap^ face, List<PointF>^ pts, float% similarity)
+	long Recognizer::Identify(Bitmap^ face, List<PointF>^ pts, float% similarity)
 	{
 		SeetaImageData img = Utils::Bitmap2SeetaImageData(face);
 		SeetaPointF points[5];
@@ -53,34 +57,15 @@ namespace Face
 
 		float s = -1;
 		int idx = -1;
-		idx = this->recognizer->Recognize(img, points, &s);
+		idx = this->recognizer->Query(img, points, &s);
 		
 		similarity = s;
 
 		return idx;
 	}
 
-	array<float>^ Recognizer::Identify(Bitmap^ face, List<PointF>^ pts)
-	{
-		SeetaImageData img = Utils::Bitmap2SeetaImageData(face);
-		SeetaPointF points[5];
-		for (int i = 0; i < 5; i++)
-		{
-			points[i] = Utils::PointF2SeetaPointF(pts[i]);
-		}
 
-		float* s = this->recognizer->RecognizeEx(img, points);
-
-		array<float>^ similarity = gcnew array<float>(this->GetMaxRegisterIndex());
-		for (int i = 0; i < this->GetMaxRegisterIndex();i++)
-		{
-			similarity[i] = s[i];
-		}
-
-		return similarity;
-	}
-
-	int Recognizer::Register(Bitmap^ face, List<PointF>^ pts)
+	long Recognizer::Register(Bitmap^ face, List<PointF>^ pts)
 	{
 		SeetaImageData img = Utils::Bitmap2SeetaImageData(face);
 		SeetaPointF points[5];
@@ -100,8 +85,8 @@ namespace Face
 		this->recognizer->Clear();
 	}
 
-	int Recognizer::GetMaxRegisterIndex()
+	long Recognizer::GetMaxRegisterIndex()
 	{
-		return this->recognizer->MaxRegisterIndex();
+		return this->recognizer->Count();
 	}
 }

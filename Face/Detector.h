@@ -1,7 +1,9 @@
 #pragma once
-#include "include/FaceEngine.h"
+#include "include/FaceDetector.h"
 
 #include "Utils.h"
+
+#pragma comment (lib,"lib/SeetaFaceDetector.lib")
 
 using namespace System;
 using namespace System::Collections::Generic;
@@ -19,9 +21,8 @@ namespace Face
 		~Detector();
 
 		List<Rectangle>^ Detect(Bitmap^ bmp);
-		List<Rectangle>^ FastDetect(Bitmap^ bmp);
 
 	private:
-		seeta::FaceDetector2* detector = nullptr;
+		seeta::FaceDetector* detector = nullptr;
 	};
 }

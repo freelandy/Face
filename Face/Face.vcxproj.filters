@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Face.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -28,9 +25,6 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Detector.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Identifier.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Recognizer.h">
@@ -45,20 +39,17 @@
     <ClInclude Include="include\FaceDetector.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\FaceEngine.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="include\FaceLandmarker.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\SeetaFace2\FaceDetector\include\seeta\Struct.h">
+    <ClInclude Include="Assessor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\QualityAssessor.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Face.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="AssemblyInfo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -71,13 +62,13 @@
     <ClCompile Include="Detector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Identifier.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Recognizer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Utils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Assessor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

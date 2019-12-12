@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "Aligner.h"
 
 namespace Face
@@ -8,8 +9,12 @@ namespace Face
 
 	Aligner::Aligner(String^ model_file_name)
 	{
+		seeta::ModelSetting::Device device = seeta::ModelSetting::CPU;
+		int id = 0;
+
 		char* model = (char*)(void*)System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(model_file_name);
-		this->aligner = new seeta::PointDetector2(model);
+		seeta::ModelSetting model_setting(model, device, id);
+		this->aligner = new seeta::FaceLandmarker(model_setting);
 	}
 	Aligner::~Aligner()
 	{
@@ -25,10 +30,12 @@ namespace Face
 		SeetaImageData img = Utils::Bitmap2SeetaImageData(bmp);
 		SeetaRect rect = Utils::Rectangle2SeetaRect(face);
 
-		SeetaPointF* points = this->aligner->Detect(img, rect);
+		std::vector<SeetaPointF> points(this->aligner->number());
+		this->aligner->mark(img, rect, points.data());
+		//points = std::move(points);
 
 		List<PointF>^ pts = gcnew List<PointF>();
-		for (int i = 0; i < 5; i++)
+		for (int i = 0; i < points.size(); i++)
 		{
 			PointF pt;
 			pt.X = points[i].x;
